@@ -47,7 +47,7 @@ class CommunityGraphFactory(object):
             create_using=nx.Graph(),
             nodetype=int
         )
-        print(nx.info(nx_G))
+        #print(nx.info(nx_G))
         return self._sort_nodes(nx_G)
     
     def create_random_graph(self, total_nodes, num_comm, prob_in, prob_out, seed=None):
